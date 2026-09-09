@@ -1379,7 +1379,7 @@ jobs:
         with:
           timeout_minutes: 30
           max_attempts: 3
-          retry_on: timeout
+          retry_on: any
           command: |
             echo "当前 KSU 最新提交日期: ${KSU_LATEST_COMMIT_DATE}"
             echo "当前 SUSFS 最新提交日期: ${SUSFS_LATEST_COMMIT_DATE}"
